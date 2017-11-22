@@ -1,0 +1,123 @@
+$secondary: #046;
+$light: #333;
+$serif: "Roboto Slab";
+$sans: "Ubuntu";
+
+@media screen {
+    body {
+        height:297mm;
+        width:210mm;
+        margin-left:auto;
+        margin-right:auto;
+        background-color: lightgray;
+    }
+
+}
+
+@page {
+  size: A4 portrait;
+}
+
+body {
+    font-family: $sans;
+    font-size: 0.8rem;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    @media print { //black?
+    }
+    color: rgb(0,0,200);
+}
+
+#bodywrapper {
+    background-color: white;
+    //background-clip: content-box;
+    padding: 3.5rem;
+    height: 100%;
+}
+
+
+header {
+    table {
+        width: 100%;
+    }
+    h1 {
+        font-size: 3.5rem;
+        text-align: center;
+        font-family: $serif;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    #subheader {
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
+
+    #separator {
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+    }
+}
+
+#maintable{
+    //background-color: lightblue;
+    table-layout:fixed;
+    width: 100%;
+
+    td {
+        padding: 0;
+        vertical-align: top;
+    }
+
+    #leftcol {
+        //width: 60%;
+        padding-right: 0.5rem;
+    }
+    #rightcol {
+        //width: 40%;
+        padding-left: 0.5rem;
+        //background-color: pink;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        color: $secondary;
+        margin-bottom: 0rem;
+        //text-transform: uppercase;
+        //font-variant: small-caps;
+        font-family: $serif;
+    }
+
+    h3 {
+        font-weight: 300;
+        margin-top: 0.8em;
+        margin-bottom: 0em;
+        font-style: italic;
+        strong {
+            font-style: normal;
+        }
+    }
+    .time {
+        font-size: 0.7rem;
+        color: $light;
+        //font-variant: small-caps;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin-top: 0.5rem;
+    }
+
+    ul {
+        list-style:none;
+        padding-left:0;
+        margin-top: 0rem;
+        li {
+            margin: 0.5rem 0;
+        }
+    }
+}
+
