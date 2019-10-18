@@ -9,3 +9,5 @@ CSS must be compiled using SASS:
 sudo apt install ruby-sass
 scss --watch cv.scss:cv.css
 ```
+
+Uses icons from [Font Awesome](https://github.com/FortAwesome/Font-Awesome).
