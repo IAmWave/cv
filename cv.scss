@@ -34,7 +34,7 @@ a {
 #bodywrapper {
     background-color: white;
     //background-clip: content-box;
-    padding: 2rem; // 2.7
+    padding: 2rem;
     height: 100%;
 }
 
@@ -86,7 +86,8 @@ header {
     h2 {
         font-size: 1.3rem;
         color: $secondary;
-        margin-bottom: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
         //text-transform: uppercase;
         //font-variant: small-caps;
         font-family: $serif;
@@ -94,7 +95,7 @@ header {
 
     h3 {
         font-weight: 300;
-        margin-top: 0.8em;
+        margin-top: 0.0em;
         margin-bottom: 0em;
         font-style: italic;
         strong {
@@ -110,6 +111,7 @@ header {
 
     p {
         margin-top: 0.2rem;
+        margin-bottom: 0.5rem;
     }
 
     ul {
